@@ -10,4 +10,4 @@
 #             if s[j] == 'а' and j - n > 1:
 #                 in_я.append([n, j])
 # for i in in_я:
-#     print(s[i[0]+1:i[1]])
+#     print(s[i[0]+1:i[1]]
