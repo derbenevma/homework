@@ -1,4 +1,23 @@
-# Задача 2
+# s = 'негры пидорынегры пидорынегры пидорынегры пидорынегры пидоры нннееегггрррыыы   пппииидддооорррыыынн'
+# counter = 0
+# N_words = []
+# for n, i in enumerate(s):
+#     if i == 'н':
+#         if counter == 0:
+#             N_words.append([n])
+#         counter += 1
+#     elif i != 'н' and counter > 0:
+#         N_words[-1].append(counter)
+#         counter = 0
+# else:
+#     if counter > 0:
+#         N_words[-1].append(counter)
+# N_words = sorted(N_words, key=lambda x: x[1], reverse=True)
+# t = '!' * N_words[0][1]
+# s = s[:N_words[0][0]] + t + s[N_words[0][0]+N_words[0][1]+1:]
+# print(s)
+# print(f'количество букв с которой начинается слово, которым называют чёрных зеков-воров или рабов: {N_words[0][1]}')
+# # Задача 2
 # s = 'dfgsd(gsdfgs)fgsdfgsfgsfg' 
 # print(s[s.index('(')+1:s.index(')')])
 # Задача 3
