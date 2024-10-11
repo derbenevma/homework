@@ -18,10 +18,10 @@
 # print(s)
 # print(f'количество н: {N_words[0][1]}')
 # # Задача 2
-# s = 'dfgsd(gsdfgs)fgsdfgsfgsfg' 
+# s = input() 
 # print(s[s.index('(')+1:s.index(')')])
 # Задача 3
-# s = 'оврпаоаилоряорягвармяомтряоваяюмяоаврмюявам'
+# s = input()
 # in_я = []
 # for n, i in enumerate(s):
 #     if i == 'я':
