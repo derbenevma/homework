@@ -5,17 +5,17 @@
 # x1, x2 = map(float,input().split())
 # y1, y2 = map(float,input().split())
 # z1, z2 = map(float,input().split())
-# res = [x1, x2]
+# dot = [x1, x2]
 # acosx = acos(x1, x2)
 # acosy = acos(y1, y2)
+# acosz = acos(z1, z2)
 # if acosy > acosx :
 #     acosx = acosy
-#     res = [y1, y2]
-# acosz = acos(z1, z2)
+#     dot = [y1, y2]
 # if acosz > acosx :
 #     acosz = acosz
-#     res = [z1, z2]
-# print(*res)
+#     dot = [z1, z2]
+# print(*dot)
 # задача 2
 # n = int(input())
  
