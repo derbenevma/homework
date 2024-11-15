@@ -6,7 +6,7 @@ import numpy as np
 # def f(x, alpha, beta):
 #   return (x**beta+alpha**beta)/x**beta
 
-# fig, axs = plt.subplots(1, 1, figsize=(14, 4), layout="constrained")
+# fig, axs = plt.subplots(1, 3, figsize=(14, 4), layout="constrained")
 
 # a = 0
 # left = np.linspace(-10, a-0.01, 2000)
