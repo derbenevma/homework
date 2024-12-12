@@ -1,5 +1,5 @@
 # Задача 1
-import re
+# import re
 
 # def naity(m):
 #   if re.fullmatch(r"\b[ABEKMHOPCTYX]{1}\d{3}[ABEKMHOPCTYX]{2}\s+\d{2,3}\b", m):
