@@ -20,3 +20,21 @@
 # poisk = re.findall(r"\b\d{2}\W\d{2}\W\d{2}\b", pismo)
 # redakcia = re.sub(r"\b\d{2}\W\d{2}\W\d{2}\b", "TBD", pismo)
 # print(redakcia)
+
+# Задача 4
+# p = []
+# s = input('Введите строку: ')
+
+# abr = ''
+# for i in range(len(s)):
+#     if ord(s[i]) in range(1040,1072):
+#         abr += s[i]
+#     elif s[i] == ' ' and i < len(s)-1:
+#         if ord(s[i+1]) not in range(1040,1072):
+#             if len(abr) > 1:
+#                 p.append(abr[1:])
+#                 abr = ''
+#         else:
+#             abr += ' '
+
+# print(p)
