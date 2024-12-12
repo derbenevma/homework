@@ -21,12 +21,13 @@
 # s = input() 
 # print(s[s.index('(')+1:s.index(')')])
 # Задача 3
-# s = input()
-# in_я = []
-# for n, i in enumerate(s):
-#     if i == 'я':
-#         for j in range(n, len(s)):
-#             if s[j] == 'а' and j - n > 1:
-#                 in_я.append([n, j])
-# for i in in_я:
-#     print(s[i[0]+1:i[1]])
+# import re
+
+# def words_starting_a_ending_ya(text):
+
+#   words = re.findall(r'\b[аА][а-яА-Я]*я\b', text)
+#   return words
+
+# text = "Абстракция авария аллея Абракадабра Банальная история"
+# result = words_starting_a_ending_ya(text)
+# print(f"Слова, начинающиеся на а и заканчивающиеся на я {result}")
