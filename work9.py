@@ -37,40 +37,40 @@ import numpy as np
 
 #задание 2
 
-def f(x, alpha, beta):
-  return (x**beta+alpha**beta)/x**beta
+# def f(x, alpha, beta):
+#   return (x**beta+alpha**beta)/x**beta
 
-a = 0
-right = np.linspace(a+0.01, 25, 2000)
+# a = 0
+# right = np.linspace(a+0.01, 25, 2000)
 
-plt.figure(figsize=(12, 6))
-plt.xlabel('Частота, с^-1', fontsize=12)
-plt.ylabel('f(x)', fontsize=12)
-plt.ylim(0,25)
-plt.title("график функции f(x) при x>0")
-plt.grid(True)
+# plt.figure(figsize=(12, 6))
+# plt.xlabel('Частота, с^-1', fontsize=12)
+# plt.ylabel('f(x)', fontsize=12)
+# plt.ylim(0,25)
+# plt.title("график функции f(x) при x>0")
+# plt.grid(True)
 
-inset_axes_small = plt.axes([1, 0.6, 0.3, 0.3])
-inset_axes_small.set_xlim(0, 5)
-inset_axes_small.set_ylim(0, 5)
-inset_axes_small.grid(True)
+# inset_axes_small = plt.axes([1, 0.6, 0.3, 0.3])
+# inset_axes_small.set_xlim(0, 5)
+# inset_axes_small.set_ylim(0, 5)
+# inset_axes_small.grid(True)
 
-for i in range(3):
-  if i == 0:
-    alpha = 1
-    beta = 1
-    plt.plot(right, f(right, alpha, beta), color="blue", label='alpha = 1, beta = 1')
-  elif i == 1:
-    alpha = 2
-    beta = 1
-    plt.plot(right, f(right, alpha, beta), color="red", label='alpha = 2, beta = 1')
-  elif i == 2:
-    alpha = 1
-    beta = 2
-    plt.plot(right, f(right, alpha, beta), color="purple", label='alpha = 1, beta = 2')
+# for i in range(3):
+#   if i == 0:
+#     alpha = 1
+#     beta = 1
+#     plt.plot(right, f(right, alpha, beta), color="blue", label='alpha = 1, beta = 1')
+#   elif i == 1:
+#     alpha = 2
+#     beta = 1
+#     plt.plot(right, f(right, alpha, beta), color="red", label='alpha = 2, beta = 1')
+#   elif i == 2:
+#     alpha = 1
+#     beta = 2
+#     plt.plot(right, f(right, alpha, beta), color="purple", label='alpha = 1, beta = 2')
 
-plt.legend()
-plt.show()
+# plt.legend()
+# plt.show()
 
 #задание 3
 
