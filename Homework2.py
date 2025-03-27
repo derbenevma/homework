@@ -44,3 +44,25 @@ class CacheCalculator:
 # calc(2.5)  # 6.25, кэш {2:4, 2.5:6.25}
 # calc("text")  # TypeError
 # print(calc.cache)  # {'2':4, ...}
+
+
+# 4. Класс "Вектор"
+class Vector:
+    def __init__(self, *args):
+        for arg in args:
+            if not isinstance(arg, (int, float)):
+                raise TypeError("Координаты должны быть числами")
+        self._coords = list(args)
+
+    def __len__(self):
+        return len(self._coords)
+
+    def __abs__(self):
+        return sum(x**2 for x in self._coords)**0.5
+
+# Примеры проверки (раскомментируйте, чтобы протестировать)
+# v = Vector(1, 2, 3)  # len=3
+# print(len(v))
+# v = Vector(0, -5)    # OK
+# v = Vector("a", 2)   # TypeError
+# abs(v)  # ~5.196 для (1,2,3)
