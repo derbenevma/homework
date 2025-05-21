@@ -27,3 +27,33 @@ for animal in animals:
     print(f"  {animal.swim()}")
     if isinstance(animal, MixinFly):
         print(f"  {animal.fly()}")
+
+#№2
+class Writer:
+    def write(self):
+        return "пишет текст"
+
+
+class Painter:
+
+    def draw(self):
+        return "рисует картину"
+
+
+class CreativePerson(Writer, Painter):
+
+    def write(self):
+        return "творчески пишет стихотворение"
+
+    def draw(self):
+        return "выразительно рисует пейзаж"
+
+
+
+people = [Writer(), Painter(), CreativePerson()]
+
+for person in people:
+    if hasattr(person, 'write'):
+        print(f"{type(person).__name__}: {person.write()}")
+    if hasattr(person, 'draw'):
+        print(f"{type(person).__name__}: {person.draw()}")
